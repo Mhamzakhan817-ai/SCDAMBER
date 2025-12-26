@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tour Details | Global Pathways Travel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body class="tour-detail-page">
+
+    <!-- HEADER -->
+    <header class="site-header" id="top">
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <a href="tel:+923431981245" class="top-bar-link">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+92 343 1981245</span>
+                </a>
+                <a href="mailto:ranarayyan033@gmail.com" class="top-bar-link">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>ranarayyan033@gmail.com</span>
+                </a>
+            </div>
+            <div class="top-bar-right">
+                <a href="https://www.instagram.com/muhamza_91011?igsh=cGN4dnlqZ2M4Y3Rm"
+                   target="_blank" class="top-bar-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-bar">
+            <div class="main-container nav-bar-inner">
+                <a href="index.html" class="logo">
+                    <span class="logo-main">Global Pathways</span>
+                    <span class="logo-sub">Travel</span>
+                </a>
+
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span class="nav-toggle-line"></span>
+                    <span class="nav-toggle-line"></span>
+                </button>
+
+                <nav class="nav-links">
+                    <a href="tour.html" class="nav-link">Tours</a>
+                    <a href="packages.html" class="nav-link">Packages</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="transportation.html" class="nav-link">Transportation</a>
+                </nav>
+
+                <form class="nav-search" action="#" method="get">
+                    <input type="text" name="q" placeholder="Search" class="nav-search-input">
+                    <button type="submit" class="nav-search-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO / BREADCRUMB -->
+        <section class="tour-detail-hero">
+            <div class="tour-detail-hero-overlay"></div>
+            <div class="main-container tour-detail-hero-inner">
+                <p class="breadcrumb">
+                    <a href="index.html">Home</a> &gt;
+                    <a href="tour.html">Tours</a> &gt;
+                    <span id="tour-breadcrumb-name">Tour details</span>
+                </p>
+
+                <h1 class="tour-detail-title" id="tour-title">
+                    Sample Tour Title – 5 Days
+                </h1>
+
+                <div class="tour-detail-meta">
+                    <span class="tour-detail-meta-item" id="tour-location">
+                        <i class="fa-solid fa-location-dot"></i> Location
+                    </span>
+                    <span class="tour-detail-meta-item" id="tour-duration">
+                        <i class="fa-regular fa-clock"></i> Duration
+                    </span>
+                    <span class="tour-detail-meta-item" id="tour-group-info">
+                        <i class="fa-solid fa-users"></i> Group info
+                    </span>
+                    <span class="tour-detail-meta-item" id="tour-price-meta">
+                        <i class="fa-solid fa-bolt"></i> From price
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAIN CONTENT + SIDEBAR -->
+        <section class="tour-detail-section">
+            <div class="main-container tour-detail-layout">
+
+                <!-- LEFT: MAIN INFO -->
+                <article class="tour-detail-main">
+
+                    <!-- Image gallery -->
+                    <div class="tour-gallery">
+                        <div class="tour-gallery-main">
+                            <img id="tour-main-image" src="images/skardu lake.jpg" alt="Main tour image">
+                        </div>
+                        <div class="tour-gallery-thumbs">
+                            <img id="tour-thumb-1" src="images/skardu d.jpg" alt="Gallery image 1">
+                            <img id="tour-thumb-2" src="images/skardu.jpg" alt="Gallery image 2">
+                            <img id="tour-thumb-3" src="images/skardu lake.jpg" alt="Gallery image 3">
+                        </div>
+                    </div>
+
+                    <!-- Overview -->
+                    <section class="tour-info-card">
+                        <h2 class="tour-info-title">Tour Overview</h2>
+                        <p class="tour-info-text" id="tour-overview">
+                            This is a sample overview. JavaScript will replace this text with the
+                            real overview for the selected tour.
+                        </p>
+                        <ul class="tour-highlights-list" id="tour-highlights-list">
+                            <!-- JS will insert <li> highlights here -->
+                        </ul>
+                    </section>
+
+                    <!-- Itinerary -->
+                    <section class="tour-info-card">
+                        <h2 class="tour-info-title">Itinerary – Day by Day</h2>
+                        <div id="tour-itinerary">
+                            <!-- JS will insert .day-block elements here -->
+                        </div>
+                    </section>
+
+                    <!-- Inclusions / Exclusions -->
+                    <section class="tour-info-card tour-include-section">
+                        <div class="tour-include-column">
+                            <h2 class="tour-info-title">Included</h2>
+                            <ul class="tour-list" id="tour-included-list">
+                                <!-- JS will insert <li> items -->
+                            </ul>
+                        </div>
+                        <div class="tour-include-column">
+                            <h2 class="tour-info-title">Not Included</h2>
+                            <ul class="tour-list" id="tour-excluded-list">
+                                <!-- JS will insert <li> items -->
+                            </ul>
+                        </div>
+                    </section>
+
+                </article>
+
+                <!-- RIGHT: BOOKING SIDEBAR -->
+                <aside class="tour-detail-sidebar">
+                    <div class="booking-card">
+                        <div class="booking-price-row">
+                            <div>
+                                <span class="booking-label">From</span>
+                                <p class="booking-price" id="tour-price-main">Rs 0</p>
+                                <span class="booking-note" id="tour-price-note">per person</span>
+                            </div>
+                        </div>
+
+                        <div class="booking-meta">
+                            <span id="tour-next-departure">
+                                <i class="fa-regular fa-calendar"></i> Next departure:
+                            </span>
+                            <span id="tour-length-short">
+                                <i class="fa-solid fa-clock"></i> Duration info
+                            </span>
+                            <span id="tour-min-group">
+                                <i class="fa-solid fa-users"></i> Group size info
+                            </span>
+                        </div>
+
+                        <a href="#" target="_blank" class="booking-button" id="tour-booking-button">
+                            Book / Enquire on WhatsApp
+                        </a>
+
+                        <p class="booking-help">
+                            Have special dates or a private group? Send us a message with your
+                            preferred travel dates and group size.
+                        </p>
+                    </div>
+
+                    <div class="booking-card booking-info-card">
+                        <h3 class="booking-info-title">Why book with us?</h3>
+                        <ul class="booking-info-list">
+                            <li>Local experts with trusted partners across Pakistan</li>
+                            <li>Flexible itineraries for families and groups</li>
+                            <li>Support on WhatsApp before and during your tour</li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter-section">
+            <div class="main-container newsletter-inner">
+                <div class="newsletter-text">
+                    <h2 class="newsletter-title">Get Updates &amp; Special Offers</h2>
+                    <p class="newsletter-subtitle">
+                        Be the first to know about new tours, seasonal deals and travel tips.
+                    </p>
+                </div>
+                <form class="newsletter-form" action="#" method="post">
+                    <input type="email" name="email" class="newsletter-input" placeholder="Your Email">
+                    <button type="submit" class="newsletter-button">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" id="contact">
+        <div class="main-container footer-inner">
+            <div class="footer-column footer-about">
+                <h3 class="footer-title">About Global Pathways Travel</h3>
+                <p class="footer-text">
+                    Global Pathways Travel connects you to the most beautiful corners
+                    of Pakistan with carefully designed itineraries, trusted local
+                    partners and personalised service. From mountains and lakes to
+                    historic cities and deserts, we help you experience it all with ease.
+                </p>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/muhamza_91011?igsh=cGN4dnlqZ2M4Y3Rm" target="_blank" class="footer-social-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-column footer-links">
+                <h3 class="footer-title">Useful Links</h3>
+                <ul class="footer-link-list">
+                    <li><a href="tour.html" class="footer-link">Tours</a></li>
+                    <li><a href="index.html#destinations" class="footer-link">Top Destinations</a></li>
+                    <li><a href="transportation.html" class="footer-link">Transportation</a></li>
+                    <li><a href="contact.html" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column footer-contact">
+                <h3 class="footer-title">Contact</h3>
+                <ul class="footer-contact-list">
+                    <li class="footer-contact-item">
+                        <span class="footer-contact-label">Call / WhatsApp</span>
+                        <a href="tel:+923431981245" class="footer-contact-value">+92 343 1981245</a>
+                    </li>
+                    <li class="footer-contact-item">
+                        <span class="footer-contact-label">Email</span>
+                        <a href="mailto:ranarayyan033@gmail.com" class="footer-contact-value">
+                            ranarayyan033@gmail.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="main-container footer-bottom-inner">
+                <p class="footer-copy">
+                    &copy; 2025 Global Pathways Travel. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/923431981245" target="_blank" class="whatsapp-button" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <script src="js/main.js"></script>
+</body>
+</html>
